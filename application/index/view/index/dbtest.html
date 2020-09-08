@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>mysql数据</title>
+</head>
+<body>
+    <h6>我是mysql数据显示</h6>
+    {volist name="name" id="data" key="k"}
+		{$k}::::{$data.id}---{$data.username}---{$data.registertime}<br/>
+	{/volist} 
+    
+</body>
+</html>

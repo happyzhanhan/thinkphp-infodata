@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="title" content="LayoutIt! - Bootstrap可视化布局系统">
+	<meta name="description" content="LayoutIt! 可拖放排序在线编辑的Bootstrap可视化布局系统">
+	<meta name="keywords" content="可视化,布局,系统">
+	<title>{$name}</title>
+
+	<!-- Le styles -->
+	<link href="__MANAGER__/css/bootstrap-combined.min.css" rel="stylesheet">
+	<link href="__MANAGER__/css/layoutit.css" rel="stylesheet">
+
+	<link href="__MANAGER__/css/default.css" rel="stylesheet">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="__MANAGER__/js/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- Fav and touch icons -->
+	<link rel="shortcut icon" href="__MANAGER__/img/favicon.png">
+
+	<script type="text/javascript" src="__MANAGER__/js/jquery-2.0.0.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="__MANAGER__/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="__MANAGER__/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="__MANAGER__/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="__MANAGER__/js/jquery.htmlClean.js"></script>
+	<script type="text/javascript" src="__MANAGER__/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="__MANAGER__/ckeditor/config.js"></script>
+	<script type="text/javascript" src="__MANAGER__/js/scripts.js"></script>
+</head>
+
+<body style="min-height: 660px; cursor: auto;" class="edit">
+{include file="index@common/Head" /}
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="">
+
+
+			<div class="sidebar-nav">
+				<ul class="nav nav-list accordion-group">
+					<li class="nav-header">
+						<div class="pull-right popover-info"><i class="icon-question-sign "></i>
+							<div class="popover fade right">
+								<div class="arrow"></div>
+								<h3 class="popover-title">功能</h3>
+								<div class="popover-content">将不同组件拖拽到右侧区域，保存生成代码。但是重新拖拽将会默认原始元素，编辑的文案需要重新编辑！~</div>
+							</div>
+						</div>
+						<i class="icon-plus icon-white"></i> 新闻编辑 </li>
+					<li style="display: list-item;" class="rows" id="newletter">
+						{include file="index@tpl/newsedit/layout" /}
+						{include file="index@tpl/newsedit/partone" /}
+						{include file="index@tpl/newsedit/parttwo" /}
+						{include file="index@tpl/newsedit/partthree" /}
+
+						{include file="index@tpl/newsedit/demo" /}
+
+					</li>
+				</ul>
+				<ul class="nav nav-list accordion-group">
+					<li class="nav-header">
+						<div class="pull-right popover-info"><i class="icon-question-sign "></i>
+							<div class="popover fade right">
+								<div class="arrow"></div>
+								<h3 class="popover-title">功能</h3>
+								<div class="popover-content">将不同组件拖拽到右侧区域，保存生成代码。但是重新拖拽将会默认原始元素，编辑的文案需要重新编辑！~</div>
+							</div>
+						</div>
+						<i class="icon-plus icon-white"></i> 新闻编辑 </li>
+					<li style="display: list-item;" class="rows" id="estRows">
+						{include file="index@tpl/model/model-12" /}
+						{include file="index@tpl/model/model-66" /}
+						{include file="index@tpl/model/model-84" /}
+						{include file="index@tpl/model/model-264" /}
+						{include file="index@tpl/model/model-444" /}
+					</li>
+				</ul>
+				<ul class="nav nav-list accordion-group">
+					<li class="nav-header"><i class="icon-plus icon-white"></i> 基本CSS
+						<div class="pull-right popover-info"><i class="icon-question-sign "></i>
+							<div class="popover fade right">
+								<div class="arrow"></div>
+								<h3 class="popover-title">帮助</h3>
+								<div class="popover-content">这里提供了一系列基本元素样式，你可以通过区块右上角的编辑按钮修改样式设置。如需了解更多信息，请访问<a target="_blank" href="http://twitter.github.io/bootstrap/base-css.html">基本CSS.</a></div>
+							</div>
+						</div>
+					</li>
+					<li style="display: none;" class="boxes" id="elmBase">
+						{include file="index@tpl/cssshow/showcss-01" /}
+						{include file="index@tpl/cssshow/showcss-02" /}
+						{include file="index@tpl/cssshow/showcss-03" /}
+						{include file="index@tpl/cssshow/showcss-04" /}
+						{include file="index@tpl/cssshow/showcss-05" /}
+						{include file="index@tpl/cssshow/showcss-06" /}
+						{include file="index@tpl/cssshow/showcss-07" /}
+						{include file="index@tpl/cssshow/showcss-08" /}
+						{include file="index@tpl/cssshow/showcss-09" /}
+						{include file="index@tpl/cssshow/showcss-10" /}
+						{include file="index@tpl/cssshow/showcss-11" /}
+						{include file="index@tpl/cssshow/showcss-12" /}
+						{include file="index@tpl/cssshow/showcss-13" /}
+
+					</li>
+				</ul>
+
+				<!--more example-->
+				{include file="index@tpl/other/more" /}
+			</div>
+		</div>
+		<!--/span-->
+		<div style="min-height: 590px;" class="demo ui-sortable"></div>
+		<!--/span-->
+		<div id="download-layout">
+			<div class="container-fluid"></div>
+		</div>
+	</div>
+	<!--/row-->
+</div>
+<!--/.fluid-container-->
+<div class="modal hide fade" role="dialog" id="editorModal">
+	<div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
+		<h3>编辑</h3>
+	</div>
+	<div class="modal-body">
+		<p>
+			<textarea id="contenteditor"></textarea>
+		</p>
+	</div>
+	<div class="modal-footer"> <a id="savecontent" class="btn btn-primary" data-dismiss="modal">保存</a> <a class="btn" data-dismiss="modal">关闭</a> </div>
+</div>
+<div class="modal hide fade" role="dialog" id="downloadModal">
+	<div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
+		<h3>下载</h3>
+	</div>
+	<div class="modal-body">
+		<p>已在下面生成干净的HTML, 可以复制粘贴代码到你的项目.</p>
+		<div class="btn-group">
+			<button type="button" id="fluidPage" class="active btn btn-info"><i class="icon-fullscreen icon-white"></i> 自适应宽度</button>
+			<button type="button" class="btn btn-info" id="fixedPage"><i class="icon-screenshot icon-white"></i> 固定宽度</button>
+		</div>
+		<br>
+		<br>
+		<p>
+			<textarea></textarea>
+		</p>
+	</div>
+	<div class="modal-footer"> <a class="btn" data-dismiss="modal">关闭</a> </div>
+</div>
+<div class="modal hide fade" role="dialog" id="shareModal">
+	<div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
+		<h3>保存</h3>
+	</div>
+	<div class="modal-body">保存成功</div>
+	<div class="modal-footer"> <a class="btn" data-dismiss="modal">Close</a> </div>
+</div>
+</body>
+</html>
